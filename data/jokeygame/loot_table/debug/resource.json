@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "allay_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "entity_data": {
+                                    "id": "marker",
+                                    "CustomName": "resource",
+                                    "data": {
+                                        "name": "resource"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "资源点"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

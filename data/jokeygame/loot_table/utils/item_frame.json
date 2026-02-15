@@ -1,0 +1,18 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "alternatives",
+                    "children": [
+                        {
+                            "type": "item",
+                            "name": "item_frame"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

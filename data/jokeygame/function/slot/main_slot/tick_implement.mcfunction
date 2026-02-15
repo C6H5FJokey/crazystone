@@ -1,0 +1,1 @@
+execute if items entity @s container.0 cobblestone positioned ^ ^ ^-1 align xyz positioned ~0.5 ~0.5 ~0.5 run tag @e[type=#jokeygame:machines, distance=..0.5, tag=machine_jk] add pause_machine_jk

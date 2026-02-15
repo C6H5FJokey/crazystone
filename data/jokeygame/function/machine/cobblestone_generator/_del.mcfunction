@@ -1,0 +1,5 @@
+setblock ~ ~ ~ air
+playsound block.stone.break
+particle minecraft:item{item:"dispenser"} ~ ~ ~ 0.1 0.1 0.1 0.1 100
+execute unless score clear setting_jk matches 1 run loot spawn ~ ~ ~ loot jokeygame:machine/cobblestone_generator
+kill @s

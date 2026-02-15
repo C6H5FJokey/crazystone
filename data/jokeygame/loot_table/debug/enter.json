@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "allay_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "entity_data": {
+                                    "id": "marker",
+                                    "CustomName": "enter",
+                                    "data": {
+                                        "name": "enter"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "text": "进入点"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

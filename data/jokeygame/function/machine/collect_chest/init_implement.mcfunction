@@ -1,0 +1,13 @@
+# 先检查能不能放
+scoreboard players set res int 0
+execute unless function jokeygame:machine/collect_chest/_place_check run return fail
+scoreboard players set res int 1
+# 需要读取 yaw_facing int 0~3，超过范围会取余数，对应南西北东
+# 需要读取 pitch_facing int 0~2，超过范围会取余数，对应平视，向下看，向上看。
+# 输入的是玩家的facing，需要转换为方块的facing
+scoreboard players operation pitch_facing int *= -1 int
+scoreboard players operation pitch_facing int %= 3 int
+# 获取本实例id
+scoreboard players operation binding machine_id_jk = global machine_id_jk
+execute align xyz positioned ~0.5 ~0.5 ~0.5 summon item_display run function jokeygame:machine/cobblestone_generator/_init
+scoreboard players add global machine_id_jk 1

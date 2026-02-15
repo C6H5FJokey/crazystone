@@ -1,0 +1,1 @@
+tag @s add bamboo_slot_jk
