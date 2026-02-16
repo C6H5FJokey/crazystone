@@ -5,3 +5,9 @@ execute if function jokeygame:machine/cobblestone_generator/_check_broken run fu
 # 检测tick
 execute if score @s cur_machine_tick_jk >= @s machine_tick_jk run function jokeygame:machine/cobblestone_generator/_main
 execute if score @s cur_machine_tick_jk >= @s machine_tick_jk run scoreboard players set @s cur_machine_tick_jk 0
+# 加速设置
+scoreboard players operation @s machine_tick_jk = cobblestone_generator_basic_cd_jk machine_tick_jk
+execute if entity @s[tag=accelerate_machine_jk] run scoreboard players operation @s machine_tick_jk = cobblestone_generator_acc_cd_jk machine_tick_jk
+tag @s remove accelerate_machine_jk
+# 冻结设置
+tag @s remove stone_machine_jk

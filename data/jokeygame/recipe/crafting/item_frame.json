@@ -1,0 +1,24 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "A": "stick"
+    },
+    "pattern": [
+        "AAA",
+        "A A",
+        "AAA"
+    ],
+    "result": {
+        "id": "item_frame",
+        "components": {
+            "can_place_on": {
+                "blocks": "#jokeygame:can_place_on"
+            },
+            "tooltip_display": {
+                "hidden_components": [
+                    "can_place_on"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "A": "cobblestone",
+        "B": "water_bucket",
+        "C": "bamboo_block",
+        "D": "shears"
+    },
+    "pattern": [
+        "ADA",
+        "ACA",
+        "ABA"
+    ],
+    "result": {
+        "id": "glow_item_frame",
+        "components": {
+            "entity_data": {
+                "id": "glow_item_frame",
+                "Item": {
+                    "id": "glow_item_frame",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "machine": {
+                                "id": "bamboo_generator"
+                            }
+                        }
+                    }
+                },
+                "Tags": [
+                    "place_temp_jk"
+                ]
+            },
+            "custom_name": "长竹机",
+            "custom_data": {
+                "machine": {
+                    "id": "bamboo_generator"
+                }
+            },
+            "can_place_on": {
+                "blocks": "#jokeygame:can_place_on"
+            },
+            "tooltip_display": {
+                "hidden_components": [
+                    "can_place_on"
+                ]
+            }
+        }
+    }
+}

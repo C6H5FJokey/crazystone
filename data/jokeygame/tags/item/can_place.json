@@ -1,0 +1,25 @@
+{
+    "values": [
+        "cobblestone",
+        "stone",
+        "#planks",
+        "#logs",
+        "#fences",
+        "bamboo_block",
+        "lava_bucket",
+        "water_bucket",
+        "torch",
+        "obsidian",
+        "#fences",
+        "item_frame",
+        "#rails",
+        "minecart",
+        "crafting_table",
+        "ice",
+        "blue_ice",
+        "chest",
+        "furnace",
+        "blast_furnace",
+        "dropper"
+    ]
+}

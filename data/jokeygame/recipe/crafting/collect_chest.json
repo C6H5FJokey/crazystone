@@ -1,0 +1,47 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "A": "copper_ingot"
+    },
+    "pattern": [
+        "AAA",
+        "A A",
+        "AAA"
+    ],
+    "result": {
+        "id": "glow_item_frame",
+        "components": {
+            "entity_data": {
+                "id": "glow_item_frame",
+                "Item": {
+                    "id": "glow_item_frame",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "machine": {
+                                "id": "collect_chest"
+                            }
+                        }
+                    }
+                },
+                "Tags": [
+                    "place_temp_jk"
+                ]
+            },
+            "custom_name": "收集箱",
+            "custom_data": {
+                "machine": {
+                    "id": "collect_chest"
+                }
+            },
+            "can_place_on": {
+                "blocks": "#jokeygame:can_place_on"
+            },
+            "tooltip_display": {
+                "hidden_components": [
+                    "can_place_on"
+                ]
+            }
+        }
+    }
+}

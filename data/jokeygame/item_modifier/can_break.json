@@ -1,0 +1,13 @@
+{
+    "function": "set_components",
+    "components": {
+        "can_break": {
+            "blocks": "#jokeygame:can_break"
+        },
+        "tooltip_display": {
+            "hidden_components": [
+                "can_break"
+            ]
+        }
+    }
+}

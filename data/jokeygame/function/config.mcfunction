@@ -1,11 +1,21 @@
 # 默认设置
 execute unless score clear setting_jk matches -2147483648..2147483647 run scoreboard players set clear setting_jk 0
 
+# 游戏时长设置，默认15分钟
+scoreboard players set game_tick machine_tick_jk 18000
+# 传送等待时间，默认5秒
+scoreboard players set tp_cd tp_cd_jk 100
+
 # 属性设置
 scoreboard players set cobblestone_generator_basic_cd_jk machine_tick_jk 40
 scoreboard players set bamboo_generator_basic_cd_jk machine_tick_jk 10
 scoreboard players set pipe_slot_basic_cd_jk machine_tick_jk 20
+scoreboard players set collect_chest_basic_cd_jk machine_tick_jk 20
 
+scoreboard players set cobblestone_generator_acc_cd_jk machine_tick_jk 20
+scoreboard players set bamboo_generator_acc_cd_jk machine_tick_jk 5
+scoreboard players set pipe_slot_acc_cd_jk machine_tick_jk 10
+scoreboard players set collect_chest_acc_cd_jk machine_tick_jk 10
 
 # 挖掘时间注册表
 scoreboard players set mine_slot_basic_cd_jk machine_tick_jk 600

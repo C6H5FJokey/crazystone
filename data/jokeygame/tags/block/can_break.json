@@ -1,0 +1,19 @@
+{
+    "values": [
+        "stone",
+        "cobblestone",
+        "#logs",
+        "#fences",
+        "#planks",
+        "chest",
+        "barrel",
+        "bamboo_block",
+        "bamboo_planks",
+        "dropper",
+        "obsidian",
+        "#jokeygame:furnace",
+        "crafting_table",
+        "ice",
+        "blue_ice"
+    ]
+}

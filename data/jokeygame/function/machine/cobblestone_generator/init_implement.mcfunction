@@ -1,7 +1,9 @@
 # 先检查能不能放
 scoreboard players set res int 0
-execute unless function jokeygame:machine/cobblestone_generator/_place_check run return fail
-scoreboard players set res int 1
+execute unless function jokeygame:machine/cobblestone_generator/_place_check run scoreboard players set res int 1
+execute if score res int matches 1 at @p[tag=place_player_temp_jk] run loot spawn ~ ~ ~ loot jokeygame:machine/cobblestone_generator
+execute if score res int matches 1 run kill @s
+execute if score res int matches 1 run return fail
 # 需要读取 yaw_facing int 0~3，超过范围会取余数，对应南西北东
 # 需要读取 pitch_facing int 0~2，超过范围会取余数，对应平视，向下看，向上看。
 # 输入的是玩家的facing，需要转换为方块的facing

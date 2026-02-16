@@ -17,7 +17,7 @@ data modify storage vp_core:io version_range set value [0,10000]
 data modify storage vp_core:io game_state set value "preparing"
 data modify storage vp_core:io field_size set value 3
 data modify storage vp_core:io field_height set value 1
-data modify storage vp_core:io field_center set value [0.0d,0.0d,0.0d]
+data modify storage vp_core:io field_center set value [86.0d,21.0d,139.0d]
 # 将模块基本信息导出为数据模板
 function jokeygame:_model
 

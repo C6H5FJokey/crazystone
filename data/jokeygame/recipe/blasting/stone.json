@@ -1,0 +1,18 @@
+{
+    "type": "blasting",
+    "category": "blocks",
+    "ingredient": "cobblestone",
+    "result": {
+        "id": "stone",
+        "components": {
+            "can_place_on": {
+                "blocks": "#jokeygame:can_place_on"
+            },
+            "tooltip_display": {
+                "hidden_components": [
+                    "can_place_on"
+                ]
+            }
+        }
+    }
+}

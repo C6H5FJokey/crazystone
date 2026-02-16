@@ -1,1 +1,3 @@
 execute if items entity @s container.0 cobblestone positioned ^ ^ ^-1 align xyz positioned ~0.5 ~0.5 ~0.5 run tag @e[type=#jokeygame:machines, distance=..0.5, tag=machine_jk] add pause_machine_jk
+execute if items entity @s container.0 redstone_block positioned ^ ^ ^-1 align xyz positioned ~0.5 ~0.5 ~0.5 run tag @e[type=#jokeygame:machines, distance=..0.5, tag=machine_jk] add accelerate_machine_jk
+execute if items entity @s container.0 blue_ice positioned ^ ^ ^-1 align xyz positioned ~0.5 ~0.5 ~0.5 run tag @e[type=#jokeygame:machines, distance=..0.5, tag=cobblestone_generator_jk] add stone_machine_jk

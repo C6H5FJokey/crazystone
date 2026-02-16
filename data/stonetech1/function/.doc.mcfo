@@ -1,0 +1,11 @@
+#stonetech1:doc.mcfo
+
+# stonetech1临时对象
+_this:{
+	hall_center:[storage vp_core:io hall_center,ListDouble,3],
+	hall_size:[storage vp_core:io hall_size,Int],
+	hall_height:[storage vp_core:io hall_height,Int],
+	hall_prefix:[storage vp_core:io hall_prefix,String],
+	hall_spawn:[storage vp_core:io hall_spawn,ListDouble,3],
+	hall_area_uuid:[storage vp_core:io hall_area_uuid,String]
+}

@@ -17,8 +17,8 @@
                                         "count": 1,
                                         "components": {
                                             "custom_data": {
-                                                "machine":{
-                                                    "id":"bamboo_generator"
+                                                "machine": {
+                                                    "id": "bamboo_generator"
                                                 }
                                             }
                                         }
@@ -26,14 +26,22 @@
                                     "Tags": [
                                         "place_temp_jk"
                                     ]
+                                },
+                                "can_place_on": {
+                                    "blocks": "#jokeygame:can_place_on"
+                                },
+                                "tooltip_display": {
+                                    "hidden_components": [
+                                        "can_place_on"
+                                    ]
                                 }
                             }
                         },
                         {
                             "function": "set_custom_data",
                             "tag": {
-                                "machine":{
-                                    "id":"bamboo_generator"
+                                "machine": {
+                                    "id": "bamboo_generator"
                                 }
                             }
                         },
