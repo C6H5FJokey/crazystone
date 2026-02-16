@@ -3,6 +3,7 @@
 
 # 设置游戏开始
 gamerule keepInventory false
+scoreboard players set clear int 0
 execute as @e[type=marker,tag=team_point_jk,tag=red_team_jk] run team add red_jk
 execute as @e[type=marker,tag=team_point_jk,tag=green_team_jk] run team add green_jk
 execute as @e[type=marker,tag=team_point_jk,tag=yellow_team_jk] run team add yellow_jk
@@ -19,7 +20,7 @@ execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_ga
 execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run give @s crafting_table
 execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run give @s wooden_pickaxe
 # 生成资源
-execute as @e[type=marker, tag=resource_jk] at @s run summon chest_minecart ~ ~ ~ {LootTable:"jokeygame:resource/normal"}
+execute as @e[type=marker, tag=resource_jk] at @s run summon chest_minecart ~ ~ ~ {LootTable:"jokeygame:resource/normal", Tags:["resource_chest_jk"]}
 
 # 下一刻跳转到进行状态
 data modify storage vp_core:io game_state set value "running"

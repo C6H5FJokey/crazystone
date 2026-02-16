@@ -28,3 +28,20 @@ data modify storage vp_core:io game_state set value "rewarding"
 # 奖励计时器
 summon marker 0 0 0 {Tags:["vp_rewarding"],CustomName:"vp_rewarding"}
 scoreboard players set @e[tag=vp_rewarding,limit=1] killtime 300
+# 清理地图
+scoreboard players set clear int 1
+execute as @e[type=item_display, tag=cobblestone_generator_jk] at @s run function jokeygame:machine/cobblestone_generator/_del
+execute as @e[type=item_display, tag=bamboo_generator_jk] at @s run function jokeygame:machine/bamboo_generator/_del
+execute as @e[type=marker, tag=collect_chest_jk] at @s run function jokeygame:machine/collect_chest/_del
+kill @e[type=item_frame, tag=slot_jk]
+kill @e[type=glow_item_frame, tag=slot_jk]
+execute as @e[type=chest_minecart, tag=resource_chest_jk] at @s run tp ~ -128 ~
+kill @e[type=chest_minecart, tag=resource_chest_jk]
+kill @e[type=marker, tag=team_point_jk]
+kill @e[type=marker, tag=resource_jk]
+kill @e[type=marker, tag=exit_jk]
+kill @e[type=marker, tag=enter_jk]
+team empty red_jk
+team empty green_jk
+team empty yellow_jk
+team empty blue_jk
