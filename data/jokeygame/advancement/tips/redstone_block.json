@@ -1,0 +1,30 @@
+{
+    "parent": "jokeygame:tips/welcome",
+    "display": {
+        "icon": {
+            "id": "redstone_block"
+        },
+        "description": {"text": "红石块可以放入机器的主槽位，使其工作速度翻倍"},
+        "announce_to_chat": false,
+        "title": "红石块"
+    },
+    "criteria": {
+        "redstone": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["redstone", "redstone_block"]
+                    }
+                ]
+            }
+        },
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        ["impossible"],
+        ["redstone"]
+    ]
+}

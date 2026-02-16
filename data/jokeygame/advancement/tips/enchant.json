@@ -1,0 +1,30 @@
+{
+    "display":{
+        "icon": {
+            "id": "enchanted_book"
+        },
+        "title": "附魔",
+        "announce_to_chat": false,
+        "description": {"text":"当副手持有附魔书时，能将附魔效果作用于主手的工具上"}
+    },
+    "parent": "jokeygame:tips/welcome",
+    "criteria": {
+        "get": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:enchanted_book"
+                    }
+                ]
+            }
+        },
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        ["get"],
+        ["impossible"]
+    ]
+}

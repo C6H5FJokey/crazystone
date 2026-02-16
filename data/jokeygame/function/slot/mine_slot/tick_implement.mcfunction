@@ -15,6 +15,11 @@ execute if score res int matches 0 unless data entity @s {Fixed:0b} run data mer
 # 判定挖掘方块
 execute unless block ~ ~ ~ #jokeygame:can_mine run scoreboard players set @s cur_machine_tick_jk 0
 
+# 附属的必须是一个容器，如果是箱子那别管，但是如果是熔炉需要检测是否满了
+execute unless data block ^ ^ ^-1 Items run scoreboard players set @s cur_machine_tick_jk 0
+execute if block ^ ^ ^-1 #jokeygame:furnace if items block ^ ^ ^-1 container.0 cobblestone[count=64] run scoreboard players set @s cur_machine_tick_jk 0
+
+
 # 检测tick
 execute if score @s cur_machine_tick_jk >= @s machine_tick_jk run function jokeygame:slot/mine_slot/_main
 execute if score @s cur_machine_tick_jk >= @s machine_tick_jk run scoreboard players set @s cur_machine_tick_jk 0

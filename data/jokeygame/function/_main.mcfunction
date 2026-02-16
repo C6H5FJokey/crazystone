@@ -11,7 +11,7 @@ execute as @e[type=item,tag=] if items entity @s container.0 #jokeygame:tools[!c
 execute as @e[type=item,tag=] if items entity @s container.0 bucket[!can_place_on] run item modify entity @s container.0 jokeygame:can_bucket
 
 # 撤离点冒烟
-execute as @e[type=marker,tag=exit_jk] at @s run particle dust{color:[1,1,1],scale:2.0} ~ ~ ~ 0.2 1.0 0.2 0 10
+execute as @e[type=marker,tag=exit_jk] at @s run particle dust{color:[1,1,1],scale:2.0} ~ ~1 ~ 0.2 0.5 0.2 0 10
 
 # 统计石头
 execute as @n[type=marker,tag=red_team_jk] at @s run scoreboard players operation @s stone_count_jk += @e[type=marker,tag=collect_chest_jk,team=red_jk] stone_count_jk

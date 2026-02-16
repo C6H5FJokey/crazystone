@@ -1,10 +1,11 @@
 # 默认设置
 execute unless score clear setting_jk matches -2147483648..2147483647 run scoreboard players set clear setting_jk 0
+scoreboard players set team_num setting_jk 4
 
 # 游戏时长设置，默认15分钟
 scoreboard players set game_tick machine_tick_jk 18000
-# 传送等待时间，默认5秒
-scoreboard players set tp_cd tp_cd_jk 100
+# 传送等待时间，默认3秒
+scoreboard players set tp_cd tp_cd_jk 60
 
 # 属性设置
 scoreboard players set cobblestone_generator_basic_cd_jk machine_tick_jk 40

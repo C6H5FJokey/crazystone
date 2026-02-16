@@ -1,0 +1,71 @@
+{
+    "parent": "jokeygame:tips/welcome",
+    "display": {
+        "icon": {
+            "id": "bamboo"
+        },
+        "description": [
+            {
+                "text": "造竹机可以源源不断造出",
+                "color": "white"
+            },
+            {
+                "text": "[竹子]",
+                "color": "dark_green"
+            },
+            {
+                "text": "，对机器前方使用左键可以获得机器生产出来的",
+                "color": "white"
+            },
+            {
+                "text": "[竹子]",
+                "color": "dark_green"
+            },
+            {
+                "text": "，如果前方对准",
+                "color": "white"
+            },
+            {
+                "text": "[容器]",
+                "color": "dark_green"
+            },
+            {
+                "text": "或",
+                "color": "white"
+            },
+            {
+                "text": "[需要烧制物品的熔炉]",
+                "color": "dark_green"
+            },
+            {
+                "text": "，可以直接将竹子输入至容器中。可以用圆石、竹块、水桶和剪刀来制作。破坏机器的",
+                "color": "white"
+            },
+            {
+                "text": "[主槽位]",
+                "color": "dark_green"
+            },
+            {
+                "text": "可以将其变回物品。",
+                "color": "white"
+            }
+        ],
+        "announce_to_chat": false,
+        "title": "长竹机"
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "impossible"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "jokeygame:crafting/bamboo_generator"
+        ]
+    }
+}

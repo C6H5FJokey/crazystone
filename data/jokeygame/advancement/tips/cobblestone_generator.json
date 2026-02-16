@@ -1,0 +1,63 @@
+{
+    "parent": "jokeygame:tips/welcome",
+    "display": {
+        "icon": {
+            "id": "dispenser"
+        },
+        "description": [
+            {
+                "text": "刷石机可以源源不断造出",
+                "color": "white"
+            },
+            {
+                "text": "[圆石]",
+                "color": "dark_green"
+            },
+            {
+                "text": "方块，需要玩家",
+                "color": "white"
+            },
+            {
+                "text": "[自行挖掘]",
+                "color": "dark_green"
+            },
+            {
+                "text": "或者使用",
+                "color": "white"
+            },
+            {
+                "text": "[带有镐类工具的插槽]",
+                "color": "dark_green"
+            },
+            {
+                "text": "进行挖掘。通过圆石、水桶、岩浆桶可以制作刷石机。破坏机器的",
+                "color": "white"
+            },
+            {
+                "text": "[主槽位]",
+                "color": "dark_green"
+            },
+            {
+                "text": "可以将其变回物品。",
+                "color": "white"
+            }
+        ],
+        "announce_to_chat": false,
+        "title": "刷石机"
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "impossible"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "jokeygame:crafting/cobblestone_generator"
+        ]
+    }
+}

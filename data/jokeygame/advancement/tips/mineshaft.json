@@ -1,0 +1,50 @@
+{
+    "parent": "jokeygame:tips/welcome",
+    "display": {
+        "icon": {
+            "id": "chest_minecart"
+        },
+        "description": [
+            {
+                "text": "矿井会有一些以",
+                "color": "white"
+            },
+            {
+                "text": "[运输矿车]",
+                "color": "dark_green"
+            },
+            {
+                "text": "形式出现的资源点，里面有一些用于制作/升级机器或者是装备的资源，但运输矿车物品本身是没有用的。矿井因为时间关系没有布置可以挖掘的矿物，但是石头是可以挖的。站在",
+                "color": "white"
+            },
+            {
+                "text": "[混凝土]",
+                "color": "dark_green"
+            },
+            {
+                "text": "上完成等待即可传送至矿井。在矿井中找到",
+                "color": "white"
+            },
+            {
+                "text": "[冒烟的撤离点]",
+                "color": "dark_green"
+            },
+            {
+                "text": "，站在上面并等待即可传送回基底。当然小心，其他玩家。",
+                "color": "white"
+            }
+        ],
+        "announce_to_chat": false,
+        "title": "矿井"
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "impossible"
+        ]
+    ]
+}

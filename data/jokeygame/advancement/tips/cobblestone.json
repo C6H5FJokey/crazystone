@@ -1,0 +1,30 @@
+{
+    "parent": "jokeygame:tips/cobblestone_generator",
+    "display": {
+        "icon": {
+            "id": "cobblestone"
+        },
+        "description": [{"text": "圆石可以放入机器的", "color": "white"}, {"text": "[主槽位]", "color": "dark_green"},{"text": "中来使机器", "color": "white"}, {"text":"[暂停]", "color": "dark_green"}, {"text":"运行；除了在熔炉中，也可以在", "color": "white"}, {"text":"[高炉]", "color": "dark_green"}, {"text":"中烧制为石头", "color":"white"}],
+        "announce_to_chat": false,
+        "title": "圆石"
+    },
+    "criteria": {
+        "cobblestone": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["cobblestone"]
+                    }
+                ]
+            }
+        },
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        ["impossible"],
+        ["cobblestone"]
+    ]
+}

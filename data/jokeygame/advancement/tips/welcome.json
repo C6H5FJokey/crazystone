@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "id": "stone"
+        },
+        "title": "欢迎来到赤石科技",
+        "description": [
+            {
+                "text": "游戏要求在限定时间内，将",
+                "color": "white"
+            },
+            {
+                "text": "[石头]",
+                "color": "dark_green"
+            },
+            {
+                "text": "放入游戏特有的",
+                "color": "white"
+            },
+            {
+                "text": "[收集箱]",
+                "color": "dark_green"
+            },
+            {
+                "text": "中。",
+                "color": "white"
+            },
+            {
+                "text": "[收集箱]",
+                "color": "dark_green"
+            },
+            {
+                "text": "将消耗放入的所有石头并进行计数，数量最多的一队获胜。基底可以布置自己的机器，而矿井可以获得制作机器和装备所需要的资源。",
+                "color": "white"
+            }
+        ],
+        "announce_to_chat": false,
+        "hidden": true,
+        "background": "block/stone"
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    }
+}

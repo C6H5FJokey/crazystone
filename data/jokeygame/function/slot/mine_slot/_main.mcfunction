@@ -7,7 +7,7 @@ execute store result score res int run random value 0..999
 execute if items entity @s container.0 *[minecraft:enchantments={"minecraft:unbreaking":1}] run scoreboard players add res int 500
 execute if items entity @s container.0 *[minecraft:enchantments={"minecraft:unbreaking":2}] run scoreboard players add res int 666
 execute if items entity @s container.0 *[minecraft:enchantments={"minecraft:unbreaking":3}] run scoreboard players add res int 750
-execute if items entity @s container.0 *[minecraft:enchantments={"minecraft:unbreaking":4}] run scoreboard players add res int 800
+execute if items entity @s container.0 *[minecraft:enchantments~[{enchantments:"minecraft:unbreaking", "levels":{min:4}}]] run scoreboard players add res int 800
 execute if score res int matches 0..999 if items entity @s container.0 *[damage~{durability:0}] run item replace entity @s container.0 with air
 execute if score res int matches 0..999 unless items entity @s container.0 * run playsound entity.item.break block @a
 execute if score res int matches 0..999 unless items entity @s container.0 * run return fail

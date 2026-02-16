@@ -5,7 +5,17 @@
 
 function jokeygame:_main
 scoreboard players add game_tick cur_machine_tick_jk 1
-
+scoreboard players operation temp timer_jk = game_tick machine_tick_jk
+scoreboard players operation temp timer_jk -= game_tick cur_machine_tick_jk
+scoreboard players add temp timer_jk 19
+scoreboard players operation temp timer_jk /= 20 int
+scoreboard players operation minutes timer_jk = temp timer_jk
+scoreboard players operation seconds timer_jk = temp timer_jk
+scoreboard players operation minutes timer_jk /= 60 int
+scoreboard players operation seconds timer_jk %= 60 int
+scoreboard players operation temp timer_jk %= 2 int
+scoreboard objectives modify display_jk displayname ["剩余时间: ",{text:"",extra:[{score:{objective:"timer_jk", name:"minutes"}},":",{score:{objective:"timer_jk", name:"seconds"}}]}]
+execute as @e[type=marker,tag=team_point_jk] run scoreboard players operation @s display_jk = @s stone_count_jk
 # 获取玩家人数
 execute store result score temp_cnt int if entity @a[tag=vp_gamer]
 
@@ -29,7 +39,7 @@ data modify storage vp_core:io game_state set value "rewarding"
 summon marker 0 0 0 {Tags:["vp_rewarding"],CustomName:"vp_rewarding"}
 scoreboard players set @e[tag=vp_rewarding,limit=1] killtime 300
 # 清理地图
-scoreboard players set clear int 1
+scoreboard players set clear setting_jk 1
 execute as @e[type=item_display, tag=cobblestone_generator_jk] at @s run function jokeygame:machine/cobblestone_generator/_del
 execute as @e[type=item_display, tag=bamboo_generator_jk] at @s run function jokeygame:machine/bamboo_generator/_del
 execute as @e[type=marker, tag=collect_chest_jk] at @s run function jokeygame:machine/collect_chest/_del
@@ -45,3 +55,5 @@ team empty red_jk
 team empty green_jk
 team empty yellow_jk
 team empty blue_jk
+scoreboard objectives setdisplay sidebar
+advancement revoke @a[tag=vp_gamer] from jokeygame:tips/welcome

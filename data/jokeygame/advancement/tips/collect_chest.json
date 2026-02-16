@@ -1,0 +1,55 @@
+{
+    "parent": "jokeygame:tips/welcome",
+    "display": {
+        "icon": {
+            "id": "copper_chest"
+        },
+        "description": [
+            {
+                "text": "将箱子中所有的",
+                "color": "white"
+            },
+            {
+                "text": "[石头]",
+                "color": "dark_green"
+            },
+            {
+                "text": "换算为",
+                "color": "white"
+            },
+            {
+                "text": "[箱子放置者所在队伍]",
+                "color": "dark_green"
+            },
+            {
+                "text": "的分数。破坏机器的",
+                "color": "white"
+            },
+            {
+                "text": "[主槽位]",
+                "color": "dark_green"
+            },
+            {
+                "text": "可以将其变回物品，其中箱子中非石头的物品会掉落出来。配方为8块铜锭。",
+                "color": "white"
+            }
+        ],
+        "announce_to_chat": false,
+        "title": "收集箱"
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "impossible"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "jokeygame:crafting/collect_chest"
+        ]
+    }
+}
