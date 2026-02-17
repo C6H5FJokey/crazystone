@@ -26,5 +26,8 @@
     "requirements": [
         ["impossible"],
         ["redstone"]
-    ]
+    ],
+    "rewards": {
+        "recipes": ["redstone_block"]
+    }
 }

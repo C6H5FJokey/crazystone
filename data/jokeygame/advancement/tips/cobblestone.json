@@ -26,5 +26,10 @@
     "requirements": [
         ["impossible"],
         ["cobblestone"]
-    ]
+    ],
+    "rewards": {
+        "recipes": [
+            "blast_furnace"
+        ]
+    }
 }

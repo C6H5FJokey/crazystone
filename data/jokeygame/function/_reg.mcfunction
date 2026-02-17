@@ -5,9 +5,9 @@ function jokeygame:_zero
 # 设置模块基本信息
 data modify storage vp_core:io game_namespace set value "jokeygame"
 data modify storage vp_core:io game_prefix set value "jokeygame:"
-data modify storage vp_core:io game_name set value {text:"赤石科技",color:"grey"}
+data modify storage vp_core:io game_name set value {text:"赤石科技",color:"gray"}
 data modify storage vp_core:io game_desc set value [\
-	{text:"疯狂的石头",color:"dark_red"},\
+	{text:"用科技/冒险获取很多很多很多的石头来获得胜利",color:"white"},\
 ]
 data modify storage vp_core:io game_display set value {\
 	item_icon:{id:"minecraft:stone",count:1b},\

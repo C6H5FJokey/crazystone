@@ -5,6 +5,10 @@ execute if items entity @s weapon.mainhand #jokeygame:tools[!can_break] run item
 execute if items entity @s weapon.mainhand bucket[!can_place_on] run item modify entity @s weapon.mainhand jokeygame:can_bucket
 execute if items entity @s weapon.offhand bucket[!can_place_on] run item modify entity @s weapon.offhand jokeygame:can_bucket
 
+# 清理荧光物品展示框和运输矿车
+clear @s glow_item_frame[!custom_data]
+clear @s chest_minecart[!custom_data]
+
 execute at @s if block ~ ~-1 ~ #jokeygame:concretes run tag @s add player_tp_jk
 execute at @s if entity @e[type=marker, tag=exit_jk, distance=..1] run tag @s add player_tp_jk
 execute if entity @s[tag=player_tp_jk] run scoreboard players add @s tp_cd_jk 1

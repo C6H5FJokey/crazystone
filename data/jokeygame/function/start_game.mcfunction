@@ -33,7 +33,7 @@ scoreboard players display name @n[type=marker, tag=green_team_jk] display_jk {"
 scoreboard players display name @n[type=marker, tag=yellow_team_jk] display_jk {"text":"黄队", "color":yellow}
 scoreboard players display name @n[type=marker, tag=blue_team_jk] display_jk {"text":"蓝队", "color":blue}
 # 进度重置
-advancement revoke @a[tag=vp_gamer] only jokeygame:tips/blue_ice ice
+advancement revoke @a[tag=vp_gamer] only jokeygame:tips/packed_ice ice
 advancement revoke @a[tag=vp_gamer] only jokeygame:tips/enchant get
 advancement revoke @a[tag=vp_gamer] only jokeygame:tips/redstone_block redstone
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/welcome impossible
@@ -45,7 +45,7 @@ advancement grant @a[tag=vp_gamer] only jokeygame:tips/mineshaft impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/cobblestone impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/enchant impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/redstone_block impossible
-advancement grant @a[tag=vp_gamer] only jokeygame:tips/blue_ice impossible
+advancement grant @a[tag=vp_gamer] only jokeygame:tips/packed_ice impossible
 # 提示
 tellraw @a[tag=vp_gamer] {"text": "欢迎来到赤石科技，游戏要求在限定时间内尽可能多的获得石头，游戏内添加的机器、配方和机制详细请看看进度页面。"}
 # 下一刻跳转到进行状态
