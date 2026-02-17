@@ -7,7 +7,7 @@ execute unless entity @e[tag=vp_rewarding,limit=1] run return run data modify st
 scoreboard players operation temp_duration int = @e[tag=vp_rewarding,limit=1] killtime
 
 # 奖励结算
-execute if score temp_duration int matches 280 as @a[tag=vp_gamer,limit=1] run function jokeygame:gain_emerald
+execute if score temp_duration int matches 280 run function jokeygame:reward_team
 
 # 烟花效果
 scoreboard players operation temp_mod int = temp_duration int

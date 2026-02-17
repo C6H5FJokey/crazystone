@@ -23,6 +23,8 @@ scoreboard objectives add temp_machine_id_jk dummy
 scoreboard objectives add setting_jk dummy
 # 石头数量统计
 scoreboard objectives add stone_count_jk dummy
+# 比较石头数量的临时变量
+scoreboard objectives add temp_stone_count_jk dummy
 # tp的cd
 scoreboard objectives add tp_cd_jk dummy
 # 记时的timer

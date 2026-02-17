@@ -46,6 +46,8 @@ advancement grant @a[tag=vp_gamer] only jokeygame:tips/cobblestone impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/enchant impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/redstone_block impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/blue_ice impossible
+# 提示
+tellraw @a[tag=vp_gamer] {"text": "欢迎来到赤石科技，游戏要求在限定时间内尽可能多的获得石头，游戏内添加的机器、配方和机制详细请看看进度页面。"}
 # 下一刻跳转到进行状态
 data modify storage vp_core:io game_state set value "running"
 
