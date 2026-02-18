@@ -5,50 +5,17 @@
             "id": "item_frame"
         },
         "description": [
-            {
-                "text": "物品展示框就是插槽，插槽必须附着在",
-                "color": "white"
-            },
-            {
-                "text": "[容器]",
-                "color": "dark_green"
-            },
-            {
-                "text": "上使用，功能有两点：如果当前位置也为",
-                "color": "white"
-            },
-            {
-                "text": "[容器]",
-                "color": "dark_green"
-            },
-            {
-                "text": "，将会从背后的格子中把物品",
-                "color": "white"
-            },
-            {
-                "text": "[运输]",
-                "color": "dark_green"
-            },
-            {
-                "text": "至当前格，如果插槽中放入物品能进行过滤传输；如果插槽中放入的是",
-                "color": "white"
-            },
-            {
-                "text": "[镐类工具]",
-                "color": "dark_green"
-            },
-            {
-                "text": "，则可以用其中的工具开采当前格的石头和圆石，并运入其附着的容器中。如果插槽当前格不是",
-                "color": "white"
-            },
-            {
-                "text": "[空气]",
-                "color": "dark_green"
-            },
-            {
-                "text": "则无法破坏插槽，也无法对插槽内的物品进行更换。配方为8根木棍。",
-                "color": "white"
-            }
+            {"text": "插槽附着", "color": "white"},
+            {"text": "[容器]", "color": "dark_green"},
+            {"text": "使用：①若当前格也是", "color": "white"},
+            {"text": "[容器]", "color": "dark_green"},
+            {"text": "，可从背后", "color": "white"},
+            {"text": "[运输]", "color": "dark_green"},
+            {"text": "物品（可过滤）；②若放入", "color": "white"},
+            {"text": "[镐类工具]", "color": "dark_green"},
+            {"text": "，可开采石头/圆石并存入容器。当前格", "color": "white"},
+            {"text": "[非空气]", "color": "dark_green"},
+            {"text": "时无法破坏插槽或更换物品。配方：8木棍。", "color": "white"}
         ],
         "announce_to_chat": false,
         "title": "插槽/物品展示框"
