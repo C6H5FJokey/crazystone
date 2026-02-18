@@ -13,7 +13,7 @@
             {"text": "[需要烧制物品的熔炉]", "color": "dark_green"},
             {"text": "可自动输入。破坏", "color": "white"},
             {"text": "[主槽位]", "color": "dark_green"},
-            {"text": "回收机器。配方: 6块圆石、水桶、竹块、剪刀", "color": "white"}
+            {"text": "回收机器。配方: 6圆石、水桶、竹块、剪刀", "color": "white"}
         ],
         "announce_to_chat": false,
         "title": "长竹机"
