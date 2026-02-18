@@ -10,7 +10,7 @@
                             "items": [
                                 "glow_item_frame"
                             ],
-                            "components": {
+                            "predicates": {
                                 "custom_data": {
                                     "machine": {
                                         "id": "bamboo_generator"
