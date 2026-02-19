@@ -16,6 +16,7 @@
         "#jokeygame:furnace",
         "crafting_table",
         "ice",
-        "blue_ice"
+        "blue_ice",
+        "packed_ice"
     ]
 }

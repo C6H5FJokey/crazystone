@@ -10,6 +10,7 @@
         "BAC",
         "AAA"
     ],
+    "category": "building",
     "result": {
         "id": "glow_item_frame",
         "components": {

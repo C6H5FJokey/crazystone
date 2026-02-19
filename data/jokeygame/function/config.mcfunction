@@ -2,6 +2,8 @@
 execute unless score clear setting_jk matches -2147483648..2147483647 run scoreboard players set clear setting_jk 0
 scoreboard players set team_num setting_jk 4
 
+# 准备时长设置，默认5分钟
+scoreboard players set ready_tick machine_tick_jk 6000
 # 游戏时长设置，默认15分钟
 scoreboard players set game_tick machine_tick_jk 18000
 # 传送等待时间，默认3秒
@@ -42,3 +44,7 @@ scoreboard players set minecraft:air item_id_jk 0
 scoreboard players set minecraft:stone item_id_jk 1
 scoreboard players set minecraft:cobblestone item_id_jk 2
 scoreboard players set minecraft:bamboo item_id_jk 3
+
+# 游戏阶段
+scoreboard players set ready_state machine_tick_jk 0
+scoreboard players set main_state machine_tick_jk 1

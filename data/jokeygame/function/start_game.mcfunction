@@ -7,6 +7,9 @@ gamerule doTileDrops true
 gamerule locatorBar false
 scoreboard players set clear setting_jk 0
 scoreboard players set game_tick cur_machine_tick_jk 0
+scoreboard players set ready_tick cur_machine_tick_jk 0
+# 设置游戏内状态
+scoreboard players operation game_state machine_tick_jk = ready_state machine_tick_jk
 execute as @e[type=marker,tag=team_point_jk,tag=red_team_jk] run team add red_jk
 execute as @e[type=marker,tag=team_point_jk,tag=green_team_jk] run team add green_jk
 execute as @e[type=marker,tag=team_point_jk,tag=yellow_team_jk] run team add yellow_jk
@@ -17,11 +20,6 @@ execute as @a[team=green_jk] at @n[type=marker,tag=green_team_jk] run tp @s ^ ^ 
 execute as @a[team=yellow_jk] at @n[type=marker,tag=yellow_team_jk] run tp @s ^ ^ ^3
 execute as @a[team=blue_jk] at @n[type=marker,tag=blue_team_jk] run tp @s ^ ^ ^3
 execute as @a[tag=vp_gamer] at @s run spawnpoint @s
-execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run loot give @s loot jokeygame:machine/cobblestone_generator
-execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run loot give @s loot jokeygame:machine/bamboo_generator
-execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run loot give @s loot jokeygame:machine/collect_chest
-execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run give @s crafting_table
-execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run give @s wooden_pickaxe
 # 生成资源
 execute as @e[type=marker, tag=resource_jk] at @s run summon chest_minecart ~ ~ ~ {LootTable:"jokeygame:resource/normal", Tags:["resource_chest_jk"]}
 # 修改玩家模式
@@ -46,6 +44,18 @@ advancement grant @a[tag=vp_gamer] only jokeygame:tips/cobblestone impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/enchant impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/redstone_block impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/packed_ice impossible
+# 模拟模式物资
+loot give @a[tag=vp_gamer] loot jokeygame:machine/bamboo_generator
+loot give @a[tag=vp_gamer] loot jokeygame:machine/cobblestone_generator
+loot give @a[tag=vp_gamer] loot jokeygame:machine/collect_chest
+give @a[tag=vp_gamer] crafting_table
+give @a[tag=vp_gamer] netherite_pickaxe
+give @a[tag=vp_gamer] furnace
+give @a[tag=vp_gamer] blast_furnace
+give @a[tag=vp_gamer] ice 9
+give @a[tag=vp_gamer] redstone 9
+give @a[tag=vp_gamer] enchanted_book[stored_enchantments={efficiency:5, fortune:4}]
+give @a[tag=vp_gamer] enchanted_book[stored_enchantments={silk_touch:1}]
 # 提示
 tellraw @a[tag=vp_gamer] {"text": "欢迎来到赤石科技，游戏要求在限定时间内尽可能多的获得石头，游戏内添加的机器、配方和机制详细请看看进度页面。"}
 # 下一刻跳转到进行状态
