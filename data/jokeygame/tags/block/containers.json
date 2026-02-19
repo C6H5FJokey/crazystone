@@ -1,7 +1,6 @@
 {
     "values": [
-        "#minecraft:copper_chests",
-        "minecraft:chest",
+        "#jokeygame:chests",
         "minecraft:barrel"
     ]
 }
