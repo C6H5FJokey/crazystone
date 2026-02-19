@@ -1,9 +1,8 @@
-function jokeygame:_main
-
 execute as @a[tag=vp_gamer, team=red_jk] if entity @n[type=marker,tag=team_point_jk,tag=red_team_jk, scores={stone_count_jk=..9}] run title @s actionbar {"text": "模拟阶段，游戏相关说明请查看进度，队伍获得10分或等待时间结束，将视作准备完成"}
 execute as @a[tag=vp_gamer, team=green_jk] if entity @n[type=marker,tag=team_point_jk,tag=green_team_jk, scores={stone_count_jk=..9}] run title @s actionbar {"text": "模拟阶段，游戏相关说明请查看进度，队伍获得10分或等待时间结束，将视作准备完成"}
 execute as @a[tag=vp_gamer, team=yellow_jk] if entity @n[type=marker,tag=team_point_jk,tag=yellow_team_jk, scores={stone_count_jk=..9}] run title @s actionbar {"text": "模拟阶段，游戏相关说明请查看进度，队伍获得10分或等待时间结束，将视作准备完成"}
 execute as @a[tag=vp_gamer, team=blue_jk] if entity @n[type=marker,tag=team_point_jk,tag=blue_team_jk, scores={stone_count_jk=..9}] run title @s actionbar {"text": "模拟阶段，游戏相关说明请查看进度，队伍获得10分或等待时间结束，将视作准备完成"}
+function jokeygame:_main
 execute as @a[tag=vp_gamer, team=red_jk] if entity @n[type=marker,tag=team_point_jk,tag=red_team_jk,scores={stone_count_jk=10..}] run title @s actionbar [{"text": "红队", color:red}, {"text": "准备完毕！", color:white}]
 execute as @a[tag=vp_gamer, team=green_jk] if entity @n[type=marker,tag=team_point_jk,tag=green_team_jk, scores={stone_count_jk=10..}] run title @s actionbar [{"text": "绿队", color:"green"}, {"text": "准备完毕！", color:white}]
 execute as @a[tag=vp_gamer, team=yellow_jk] if entity @n[type=marker,tag=team_point_jk,tag=yellow_team_jk, scores={stone_count_jk=10..}] run title @s actionbar [{"text": "黄队", color:yellow}, {"text": "准备完毕！", color:white}]

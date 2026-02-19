@@ -56,6 +56,7 @@ give @a[tag=vp_gamer] ice 9
 give @a[tag=vp_gamer] redstone 9
 give @a[tag=vp_gamer] enchanted_book[stored_enchantments={efficiency:5, fortune:4}]
 give @a[tag=vp_gamer] enchanted_book[stored_enchantments={silk_touch:1}]
+give @a[tag=vp_gamer] stick 32
 # 提示
 tellraw @a[tag=vp_gamer] {"text": "欢迎来到赤石科技，游戏要求在限定时间内尽可能多的获得石头，游戏内添加的机器、配方和机制详细请看看进度页面。"}
 # 下一刻跳转到进行状态

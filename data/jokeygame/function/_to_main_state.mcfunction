@@ -8,6 +8,8 @@ kill @e[type=glow_item_frame, tag=slot_jk]
 clear @a[tag=vp_gamer]
 execute as @e[type=marker,tag=team_point_jk] at @s positioned ^0.5 ^0.5 ^0.5 run fill ^-6 ^ ^-2 ^7 ^5 ^11 air replace #jokeygame:to_main_state
 
+scoreboard players set @e[type=marker, tag=team_point_jk] stone_count_jk 0
+
 execute as @a[tag=vp_gamer] at @s run tp @s @n[type=marker,tag=team_point_jk]
 
 execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run loot give @s loot jokeygame:machine/cobblestone_generator

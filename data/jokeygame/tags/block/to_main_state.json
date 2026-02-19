@@ -45,6 +45,9 @@
         "redstone_block",
         "water",
         "lava",
-        "crafting_table"
+        "crafting_table",
+        "smoker",
+        "note_block",
+        "dropper"
     ]
 }

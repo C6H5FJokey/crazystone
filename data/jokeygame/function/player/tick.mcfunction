@@ -9,7 +9,11 @@ execute if items entity @s weapon.offhand bucket[!can_place_on] run item modify 
 clear @s glow_item_frame[!custom_data]
 clear @s chest_minecart[!custom_data]
 
+# 模拟阶段不能去矿井
 execute at @s if block ~ ~-1 ~ #jokeygame:concretes run tag @s add player_tp_jk
+execute if score game_state machine_tick_jk = ready_state machine_tick_jk if entity @s[tag=player_tp_jk] run tellraw @s {text:"模拟阶段矿井未开放！"}
+execute if score game_state machine_tick_jk = ready_state machine_tick_jk run tag @s remove player_tp_jk
+execute if score game_state machine_tick_jk = ready_state machine_tick_jk run return fail
 execute at @s if entity @e[type=marker, tag=exit_jk, distance=..1] run tag @s add player_tp_jk
 execute if entity @s[tag=player_tp_jk] run scoreboard players add @s tp_cd_jk 1
 execute if entity @s[tag=!player_tp_jk, scores={tp_cd_jk=1..}] run title @s actionbar ""
