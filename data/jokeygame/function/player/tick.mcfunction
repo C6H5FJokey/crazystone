@@ -11,7 +11,7 @@ clear @s chest_minecart[!custom_data]
 
 # 模拟阶段不能去矿井
 execute at @s if block ~ ~-1 ~ #jokeygame:concretes run tag @s add player_tp_jk
-execute if score game_state machine_tick_jk = ready_state machine_tick_jk if entity @s[tag=player_tp_jk] run tellraw @s {text:"模拟阶段矿井未开放！"}
+execute if score game_state machine_tick_jk = ready_state machine_tick_jk if entity @s[tag=player_tp_jk] run title @s actionbar {text:"模拟阶段矿井未开放！"}
 execute if score game_state machine_tick_jk = ready_state machine_tick_jk run tag @s remove player_tp_jk
 execute if score game_state machine_tick_jk = ready_state machine_tick_jk run return fail
 execute at @s if entity @e[type=marker, tag=exit_jk, distance=..1] run tag @s add player_tp_jk

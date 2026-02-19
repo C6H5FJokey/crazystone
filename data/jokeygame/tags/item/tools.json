@@ -1,6 +1,8 @@
 {
     "values": [
         "#pickaxes",
-        "#axes"
+        "#axes",
+        "stick",
+        "torch"
     ]
 }
