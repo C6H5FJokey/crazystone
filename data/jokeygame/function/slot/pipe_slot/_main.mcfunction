@@ -6,7 +6,6 @@ execute positioned ^ ^ ^-1 if block ~ ~ ~ furnace unless items block ~ ~ ~ conta
 # 如果自己塞满了就放弃
 execute if block ~ ~ ~ #jokeygame:containers store result score res int if data block ~ ~ ~ Items[]
 execute if block ~ ~ ~ #jokeygame:containers if score res int matches 27 run return fail
-execute if block ~ ~ ~ #jokeygame:furnace if data block ~ ~ ~ Items[{Slot:0b}] run return fail
 # 过滤
 scoreboard players set filter int 0
 execute if items entity @s container.0 * run scoreboard players set filter int 1
