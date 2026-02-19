@@ -16,4 +16,3 @@ execute if score res1 int matches 0 store result score count1 int run data get s
 execute if score res1 int matches 0 store result score count2 int run data get storage jokeygame:io temp3.count
 execute if score res1 int matches 0 run scoreboard players operation count1 int += count2 int
 execute if score count1 int > max_stack_size int run scoreboard players set res int 0
-execute if score res int matches 1 run scoreboard players set res2 int 0

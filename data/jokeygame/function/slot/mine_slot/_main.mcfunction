@@ -1,5 +1,5 @@
-data modify entity @n[type=armor_stand, tag=temp_as_jk] equipment.mainhand set from entity @s Item
-execute store result score res int as @n[type=armor_stand, tag=temp_as_jk] run loot insert ^ ^ ^-1 mine ~ ~ ~ mainhand
+data modify entity e-0-0-0-0 equipment.mainhand set from entity @s Item
+execute store result score res int as e-0-0-0-0 run loot insert ^ ^ ^-1 mine ~ ~ ~ mainhand
 execute if score res int matches 0 run return fail
 setblock ~ ~ ~ air
 playsound block.stone.break block @a

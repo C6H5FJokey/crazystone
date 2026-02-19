@@ -19,4 +19,4 @@ execute as @n[type=marker,tag=green_team_jk] at @s run scoreboard players operat
 execute as @n[type=marker,tag=yellow_team_jk] at @s run scoreboard players operation @s stone_count_jk += @e[type=marker,tag=collect_chest_jk,team=yellow_jk] stone_count_jk
 execute as @n[type=marker,tag=blue_team_jk] at @s run scoreboard players operation @s stone_count_jk += @e[type=marker,tag=collect_chest_jk,team=blue_jk] stone_count_jk
 
-kill @e[type=armor_stand, tag=temp_as_jk]
+kill e-0-0-0-0
