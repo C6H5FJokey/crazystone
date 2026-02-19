@@ -10,7 +10,7 @@ execute if score res int matches 1 run return fail
 scoreboard players operation pitch_facing int *= -1 int
 scoreboard players operation pitch_facing int %= 3 int
 # 优化，如果玩家是低头放的，机器的面向方向应该和玩家相同
-execute if score pitch_facing int matches 1 run scoreboard players add yaw_facing int 2
+execute unless score pitch_facing int matches 2 run scoreboard players add yaw_facing int 2
 scoreboard players operation yaw_facing int %= 4 int
 # 获取本实例id
 scoreboard players operation binding machine_id_jk = global machine_id_jk
