@@ -35,7 +35,8 @@
             }
         ],
         "announce_to_chat": false,
-        "title": "收集箱"
+        "title": "收集箱",
+        "show_toast": false
     },
     "criteria": {
         "impossible": {

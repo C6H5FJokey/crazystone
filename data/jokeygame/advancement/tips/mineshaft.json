@@ -35,7 +35,8 @@
             }
         ],
         "announce_to_chat": false,
-        "title": "矿井"
+        "title": "矿井",
+        "show_toast": false
     },
     "criteria": {
         "impossible": {

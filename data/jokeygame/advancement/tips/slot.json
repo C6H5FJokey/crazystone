@@ -18,7 +18,8 @@
             {"text": "时无法破坏插槽或更换物品。配方：8木棍。", "color": "white"}
         ],
         "announce_to_chat": false,
-        "title": "插槽/物品展示框"
+        "title": "插槽/物品展示框",
+        "show_toast": false
     },
     "criteria": {
         "impossible": {

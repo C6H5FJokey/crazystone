@@ -27,7 +27,8 @@
             }
         ],
         "announce_to_chat": false,
-        "title": "浮冰"
+        "title": "浮冰",
+        "show_toast": false
     },
     "criteria": {
         "ice": {

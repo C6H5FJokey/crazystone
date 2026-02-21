@@ -7,6 +7,7 @@ kill @e[type=glow_item_frame, tag=slot_jk]
 
 clear @a[tag=vp_gamer]
 execute as @e[type=marker,tag=team_point_jk] at @s positioned ^0.5 ^0.5 ^0.5 run fill ^-6 ^ ^-2 ^7 ^5 ^11 air replace #jokeygame:to_main_state
+execute as @e[type=marker,tag=team_point_jk] at @s positioned ^ ^ ^5 run kill @e[type=item, distance=..12]
 
 scoreboard players set @e[type=marker, tag=team_point_jk] stone_count_jk 0
 

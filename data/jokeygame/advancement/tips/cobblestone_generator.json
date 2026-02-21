@@ -43,7 +43,8 @@
             }
         ],
         "announce_to_chat": false,
-        "title": "刷石机"
+        "title": "刷石机",
+        "show_toast": false
     },
     "criteria": {
         "impossible": {
