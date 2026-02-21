@@ -5,6 +5,7 @@ scoreboard players set fuel int 0
 execute if block ~ ~ ~ #jokeygame:furnace run data modify entity e-0-0-0-0 equipment.mainhand set from storage jokeygame:io input
 execute if block ~ ~ ~ #jokeygame:furnace if items entity e-0-0-0-0 weapon.mainhand #jokeygame:fuel run scoreboard players set fuel int 1
 execute if block ~ ~ ~ #jokeygame:furnace if score fuel int matches 1 run data modify storage jokeygame:io input.Slot set value 1b
+execute if block ~ ~ ~ #jokeygame:furnace if score fuel int matches 0 run item replace block ~ ~ ~ container.0 with air
 execute if block ~ ~ ~ #jokeygame:furnace if score fuel int matches 0 run data modify storage jokeygame:io input.Slot set value 0b
 execute if block ~ ~ ~ #jokeygame:furnace run return fail
 
