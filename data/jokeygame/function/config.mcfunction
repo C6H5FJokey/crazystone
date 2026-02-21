@@ -12,7 +12,7 @@ scoreboard players set tp_cd tp_cd_jk 60
 # 属性设置
 scoreboard players set cobblestone_generator_basic_cd_jk machine_tick_jk 40
 scoreboard players set bamboo_generator_basic_cd_jk machine_tick_jk 10
-scoreboard players set pipe_slot_basic_cd_jk machine_tick_jk 20
+scoreboard players set pipe_slot_basic_cd_jk machine_tick_jk 19
 scoreboard players set collect_chest_basic_cd_jk machine_tick_jk 20
 
 scoreboard players set cobblestone_generator_acc_cd_jk machine_tick_jk 20

@@ -21,6 +21,7 @@
         "chest",
         "furnace",
         "blast_furnace",
-        "dropper"
+        "dropper",
+        "barrel"
     ]
 }
