@@ -8,6 +8,9 @@ gamerule locatorBar false
 scoreboard players set clear setting_jk 0
 scoreboard players set game_tick cur_machine_tick_jk 0
 scoreboard players set ready_tick cur_machine_tick_jk 0
+# 获取玩家数量以设置team_num
+execute store result score team_num cur_machine_tick_jk if entity @a[tag=vp_gamer]
+scoreboard players operation team_num cur_machine_tick_jk < team_num setting_jk
 # 设置游戏内状态
 scoreboard players operation game_state machine_tick_jk = ready_state machine_tick_jk
 execute as @e[type=marker,tag=team_point_jk,tag=red_team_jk] run team add red_jk

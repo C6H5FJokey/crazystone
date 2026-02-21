@@ -24,6 +24,6 @@ execute as @e[type=marker,tag=team_point_jk] run scoreboard players operation @s
 execute if score ready_tick cur_machine_tick_jk >= ready_tick machine_tick_jk run scoreboard players operation game_state machine_tick_jk = main_state machine_tick_jk
 scoreboard players set res int 0
 execute store result score res int if entity @e[type=marker,tag=team_point_jk,scores={stone_count_jk=10..}]
-execute if score res int = team_num setting_jk run scoreboard players operation game_state machine_tick_jk = main_state machine_tick_jk
+execute if score res int = team_num cur_machine_tick_jk run scoreboard players operation game_state machine_tick_jk = main_state machine_tick_jk
 
 execute if score game_state machine_tick_jk = main_state machine_tick_jk run function jokeygame:_to_main_state
