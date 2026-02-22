@@ -47,6 +47,7 @@ advancement grant @a[tag=vp_gamer] only jokeygame:tips/cobblestone impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/enchant impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/redstone_block impossible
 advancement grant @a[tag=vp_gamer] only jokeygame:tips/packed_ice impossible
+advancement grant @a[tag=vp_gamer] only jokeygame:tips/magic_bundle impossible
 # 模拟模式物资
 loot give @a[tag=vp_gamer] loot jokeygame:machine/bamboo_generator
 loot give @a[tag=vp_gamer] loot jokeygame:machine/cobblestone_generator
@@ -60,6 +61,10 @@ give @a[tag=vp_gamer] redstone 9
 give @a[tag=vp_gamer] enchanted_book[stored_enchantments={efficiency:5, fortune:4}]
 give @a[tag=vp_gamer] enchanted_book[stored_enchantments={silk_touch:1}]
 give @a[tag=vp_gamer] stick 32
+give @a[tag=vp_gamer,team=red_jk] red_bundle[item_name="魔法口袋"]
+give @a[tag=vp_gamer,team=green_jk] green_bundle[item_name="魔法口袋"]
+give @a[tag=vp_gamer,team=yellow_jk] yellow_bundle[item_name="魔法口袋"]
+give @a[tag=vp_gamer,team=blue_jk] blue_bundle[item_name="魔法口袋"]
 # 提示
 tellraw @a[tag=vp_gamer] {"text": "欢迎来到赤石科技，游戏要求在限定时间内尽可能多的获得石头，游戏内添加的机器、配方和机制详细请看看进度页面。"}
 # 下一刻跳转到进行状态

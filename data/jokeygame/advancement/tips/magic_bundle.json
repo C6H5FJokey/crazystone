@@ -1,0 +1,22 @@
+{
+    "parent": "jokeygame:tips/welcome",
+    "display": {
+        "icon": {
+            "id": "bundle"
+        },
+        "description": "当魔法口袋变成掉落物时，魔法口袋会传送到本队的出生点",
+        "announce_to_chat": false,
+        "title": "魔法口袋",
+        "show_toast": false
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "impossible"
+        ]
+    ]
+}

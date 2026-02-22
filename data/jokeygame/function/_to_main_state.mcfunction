@@ -18,5 +18,9 @@ execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_ga
 execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run loot give @s loot jokeygame:machine/collect_chest
 execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run give @s crafting_table
 execute as @e[type=marker, tag=team_point_jk] at @s as @p[distance=..5,tag=vp_gamer] run give @s wooden_pickaxe
+give @a[tag=vp_gamer,team=red_jk] red_bundle[item_name="魔法口袋"]
+give @a[tag=vp_gamer,team=green_jk] green_bundle[item_name="魔法口袋"]
+give @a[tag=vp_gamer,team=yellow_jk] yellow_bundle[item_name="魔法口袋"]
+give @a[tag=vp_gamer,team=blue_jk] blue_bundle[item_name="魔法口袋"]
 
 scoreboard players set clear setting_jk 0

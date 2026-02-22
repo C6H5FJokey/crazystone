@@ -2,6 +2,10 @@
 
 summon armor_stand ~ ~ ~ {Tags:["temp_as_jk"], Invisible:1b, Invulnerable:1b, Marker:1b, Silent:1b, UUID:[I;14,0,0,0]}
 
+execute as @e[type=item,tag=] if items entity @s container.0 red_bundle run tp @s @n[type=marker,tag=red_team_jk]
+execute as @e[type=item,tag=] if items entity @s container.0 green_bundle run tp @s @n[type=marker,tag=green_team_jk]
+execute as @e[type=item,tag=] if items entity @s container.0 yellow_bundle run tp @s @n[type=marker,tag=yellow_team_jk]
+execute as @e[type=item,tag=] if items entity @s container.0 blue_bundle run tp @s @n[type=marker,tag=blue_team_jk]
 execute as @a run function jokeygame:player/tick
 execute as @e[type=item,tag=] if items entity @s container.0 glow_item_frame[!custom_data] run kill @s
 execute as @e[tag=slot_jk] at @s run function jokeygame:slot/tick_interface
